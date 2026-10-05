@@ -1,0 +1,17 @@
+/*item_price = 10;
+sub_total = 100;
+grand_total = 118;
+ 
+item1 = 10; //television
+item2 = 20; //Air Conditioner
+ 
+total1 = 100;
+total2 = 118; */
+name = "Surendar Manoj - 9568";
+info  name;
+name2 = "Hi I am \"Surendar Manoj\"";
+info name2;
+
+name = "Hi I am\"Surendar Manoj\"";
+//info name;
+info name.contains("surendar");
