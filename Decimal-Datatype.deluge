@@ -1,0 +1,4 @@
+//x = "10.99".tolong();
+x = 100.56;
+info x.floor();
+info x.ceil();
