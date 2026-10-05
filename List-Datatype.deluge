@@ -1,0 +1,9 @@
+/*fruits = ["apple", "banana", "cherry", "grapes", "orange"];
+info fruits;
+info fruits.get(4);
+*/
+fruits = Collection();
+info fruits;
+fruits.insert("Apple", "Orange", "Banana", 1, 2, '10.02.2022');
+info fruits;
+info fruits.getKey(0);
