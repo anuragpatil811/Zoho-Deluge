@@ -1,0 +1,16 @@
+employees = Collection();
+info employees;
+/*
+//employees.insert("name": "Surendar Manoj", "id":"5564");
+employees.insert("name": "Surendar Manoj", "id":"5564", "name": "Shiva"); //You cannot have same value for multiple keys. 
+info employees;
+info employees.get(0);
+info employees.get("name"); */
+employee1 = Collection();
+employee2 = Collection();
+employee1.insert("name": "Anurag", "id": "8877");
+employee2.insert("name": "Ritesh", "id": "9988");
+employees.insert(employee1, employee2);
+info employees;
+info employees.get(1);
+info employees.get(1).get("name");
