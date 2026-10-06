@@ -1,0 +1,12 @@
+x = 9;
+if(x<10)
+{
+	info "The number is lesser";
+}
+
+else 
+{
+	info "No match";
+}
+y = if(x<10, "Yes", "No");
+info y;
