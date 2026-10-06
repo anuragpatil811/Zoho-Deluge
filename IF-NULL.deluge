@@ -1,0 +1,12 @@
+x = NULL;
+if(x<10)
+{
+	info "The number is lesser";
+}
+
+else 
+{
+	info "No match";
+}
+z = ifNull(x, 0);
+info z;
