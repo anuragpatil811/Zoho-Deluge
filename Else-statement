@@ -1,0 +1,22 @@
+x = 15;
+if(x<10)
+{
+	info "The number is lesser";
+}
+else if(x==11)
+{
+	info "Number is equal";
+}
+else if(x==13)
+{
+	info "Number is equal - 1";
+}
+else if(x==10)
+{
+	info "Number is equal - 2";
+}
+else 
+{
+	info "No match";
+}
+info "I am here";
