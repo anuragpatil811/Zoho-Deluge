@@ -18,3 +18,23 @@ else
 */
 x = s_string.rightPad(10).toList("");
 info x;
+/*x = "10";
+info x.toNumber();
+y = 10.9877678;
+info y.round(2); */
+
+/*
+x = '10-10-2020';
+//info zoho.currentdate.days360(x)>0;
+info zoho.currentdate.days360(x);
+if(zoho.currentdate.days360(x)>0)
+{
+	info "Upcoming date";
+}
+info x.addDay(30);
+info x.addBusinessDay(30);
+*/
+
+x = {"name": "Surendar", "Email": "xoxxo@d.com"};
+x.insert("Age": 32);
+info x.containKey("Age");
