@@ -1,0 +1,20 @@
+m_string = "welcome to Zoho Creator";
+s_string = "zoho";
+//string = "zoho     ";
+/*if(m_string.contains(s_string))
+{
+	info "Yes";
+} */
+/*
+if(m_string.containsIgnoreCase(s_string.trim()))
+{
+	info "Yes";
+	
+}
+else 
+{
+    info "No";
+}
+*/
+x = s_string.rightPad(10).toList("");
+info x;
