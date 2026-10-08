@@ -1,0 +1,2 @@
+//This code was used to define the Approval Workflow in Customer Approval demo project in Zoho Creator
+input.Approval_Status = "Approve";
