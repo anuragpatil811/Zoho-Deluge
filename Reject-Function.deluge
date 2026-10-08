@@ -1,0 +1,6 @@
+//This function was used as a workflow function in Customer Approval project in Zoho Creator
+void Reject(int id)
+{
+	fet = Budget_Request[ID==id];
+	fet.Approval_Status="Rejected";
+}
