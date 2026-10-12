@@ -1,0 +1,6 @@
+//This program was implemen ted in Zoho Creator for fetchingrecords with look up fields
+void approver_list(int id)
+{
+	fet = Budget_Request[ID == id];
+	info fet.Approval_Status;
+}
