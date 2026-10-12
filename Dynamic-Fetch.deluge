@@ -1,0 +1,6 @@
+void Reject(int id)
+{
+	fet = Budget_Request[ID == id];
+	fet.Approval_Status="Rejected";
+	info fet.ID;
+}
