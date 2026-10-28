@@ -1,0 +1,12 @@
+//This program is used to send Automatic email notifications to all employees via email. 
+
+RelatedEmployee = Employees[employee_id == input.Visitor_Email];  //fetch visitor's email
+//Fetch the specific record fromn the report 
+reportLink = "https://creatorapp.zoho.com" + zoho.appuri + "https://creatorapp.zoho.com/demo1agsuitetech/visitor-management-app/#Report:All_Visitors?ID=" + input.ID;
+sendmail
+[
+	from: zoho.adminuserid
+	to: RelatedEmployee.Visitor_Email
+	subject: "Request for Visitor Approval"
+	message:  "Hi " + RelatedEmployee.name + ", <br> You have a visitor. Click <a href=' " + reportLink +"'>here</a> to approve or reject the request."
+]
