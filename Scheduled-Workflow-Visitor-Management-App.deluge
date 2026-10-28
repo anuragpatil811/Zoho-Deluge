@@ -1,0 +1,43 @@
+// Fetch checked-in records where Checkout_Date_Time is null or empty
+checkedInRecords = Add_Visitor[Check_in_Date_Time != null && Checkout_Date_Time==null];
+
+// Check if any records were found
+if(checkedInRecords.count() > 0)
+{
+    // Build email message body
+    emailBody = "<h2>Visitors Yet to Checkout</h2>";
+    emailBody = emailBody.concat("<p>The following visitors have checked in but have not checked out yet:</p>");
+    emailBody = emailBody.concat("<ul>");
+    
+    // Iterate through each record to build the list
+    for each visitor in checkedInRecords
+    {
+        visitorName = visitor.Name.first_name.concat(" ").concat(visitor.Name.last_name);
+        checkInTime = visitor.Check_in_Date_Time.getTime(12, true);
+        checkInTimeStr = checkInTime.toString();
+        
+        listItem = "<li>";
+        listItem = listItem.concat(visitorName);
+        listItem = listItem.concat(" - Checked in at: ");
+        listItem = listItem.concat(checkInTimeStr);
+        listItem = listItem.concat("</li>");
+        
+        emailBody = emailBody.concat(listItem);
+    }
+    
+    emailBody = emailBody.concat("</ul>");
+    
+    // Send email notification
+    sendmail
+    [
+        from: zoho.adminuserid
+        to: "admin@example.com"
+        subject: "Visitors Yet to Checkout - Visitor Management System"
+        message: emailBody
+        content type: HTML
+    ]
+}
+else
+{
+    info "No checked-in visitors found without check-out time.";
+}
